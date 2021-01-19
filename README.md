@@ -1,0 +1,2 @@
+# Spice-Social-Media-Network
+The purpose of the Spice Social Media Network is to provide a system that encourages users to share food and fun on their feeds as a way to interact with their friends.  The new Spice design will incorporate:  Back-End: Spring MVC/SpringBoot, Hibernate/SpringDataJava, PostgreSQL, etc Front-End: Angular, HTML, CSS, JavaScript, AJAX, Bootstrap, etc This project also incorporates cookies, AWS, Jenkins, and Trello.
