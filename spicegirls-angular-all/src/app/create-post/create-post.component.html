@@ -1,0 +1,31 @@
+<h3>Create Post</h3>
+<div class="container">
+<div class="row register-form">
+<div [hidden]="submitted" style="width: 400px;">
+  <form enctype="multipart/form-data" (ngSubmit)="onSubmit()">
+   
+    <div class="form-group">
+      <label for="name">Upload</label>
+      <input type="file" (change)="onFileSelected($event)" class="form-control form-control-lg" id="selectedFile"
+        required [(ngModel)]="post.image" name="selectedFile" accept="image/jpeg, image/png">
+    </div>
+    <div class="text-box">
+      <label for="name">Add Caption:</label>
+      <input type="textarea" class="form-control" id="post" required [(ngModel)]="post.post" name="post">
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>
+</div>
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+
+
+
+
+  <button class="btn btn-success" (click)="newPost()">Add</button>
+</div>
+

@@ -1,0 +1,19 @@
+<h2>Employee Details</h2> 
+
+
+<hr/>
+<div *ngIf="post">
+  <div>
+    <label><b>Post: </b></label> {{post.post}}
+  </div>
+  <div>
+    <label><b>Image: </b></label> {{post.image}}
+  </div>
+  <div>
+    <label><b>Likes: </b></label> {{post.likeCount}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Post List</button><br>

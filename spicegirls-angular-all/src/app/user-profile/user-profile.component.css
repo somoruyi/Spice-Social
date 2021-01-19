@@ -1,0 +1,65 @@
+/* mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+    background-image: linear-gradient(120deg, #f2b885, #731702);
+  }
+mat-form-field {
+  display: block;
+}
+button{
+  background-color: w#731702;
+  -webkit-text-fill-color: #f2b885;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: #f2b885;
+}
+.btn:hover{
+  background-image: linear-gradient(120deg, #f2b885, #731702); 
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: white;
+} */
+
+
+
+.pb-4{
+  background-color: rgba(242, 184, 133, 0.8);
+  -webkit-text-fill-color: #731702;
+
+}
+
+.py-3, .py-4{
+  background-color: rgba(242, 184, 133, 0.5);
+}
+
+h4{
+  margin: 0 0 0 10%;
+}
+
+.media-body{
+  -webkit-text-fill-color: #731702;
+  margin: 5% 0 0 10%;
+}
+
+.small{
+  margin: 0 0 0 10%;
+  font-size: 1rem;
+}
+
+button{
+
+  background-image: linear-gradient(120deg, #f2b885, #731702); 
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: thin;
+  -webkit-text-stroke-color: white;
+
+}
+.btn:hover{
+  background-image: none;
+  background-color: white;
+  -webkit-text-stroke: thin;
+  -webkit-text-fill-color: #731702;
+  -webkit-text-stroke-color: #731702;
+}

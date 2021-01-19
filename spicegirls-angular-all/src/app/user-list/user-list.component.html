@@ -1,0 +1,38 @@
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+ <input class="form-control mr-sm-2" type="text" placeholder="Search" id="name" name="name"[(ngModel)]="name" aria-label="Search">
+ 
+</div>
+<div class="btn-group">
+
+
+  <button class="btn btn-info" type="submit" >Search</button>
+</div>
+</form>
+<div class="card">
+  <div class="table-responsive">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Bio</th>
+      <th>Profile Picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.bio}}</td>
+      <td>{{user.profilePicture}}</td>
+      <td>
+
+          <button routerLink='/user-friend-profile' class="btn btn-info" style="margin-left: 10px">View Profile</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>

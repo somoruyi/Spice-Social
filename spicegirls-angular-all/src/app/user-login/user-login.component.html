@@ -1,0 +1,43 @@
+
+<mat-card>
+    <mat-card-content>
+        <form name="login-form" (ngSubmit)="onSubmit()">
+            <h2>Login</h2>
+            <br>
+            <div>
+                <mat-error *ngIf="loginInvalid">
+                    The username and password were not recognised
+                 </mat-error>
+                <label for="username">Username</label>
+                <mat-form-field class="full-width-input">
+                    <input matInput type="text" name="username" [(ngModel)]="user.username" #username="ngModel" required />
+                    <mat-error>
+                        Please provide a valid username
+                    </mat-error>
+                </mat-form-field> 
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="password">Password</label>
+                <mat-form-field class="full-width-input">
+                    <input matInput type="password" name="password" [(ngModel)]="user.password" #password="ngModel" required />
+                    <mat-error>
+                        Please provide a valid password
+                    </mat-error>
+                    <br>
+                </mat-form-field>
+            </div>
+            <br>
+            <br>
+            <div>
+                <button mat-raised-button type=submit  value=login>Login</button>
+            </div>
+        </form>
+        <div>
+            <a routerLink="/user-register">Create a new account</a>
+        </div>
+    </mat-card-content>
+</mat-card>
+
+<!-- (click) = "user-post()"  action= "feed.component.html-->

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.1</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.revature</groupId>
+	<artifactId>spice</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spice</name>
+	<description>Project 2</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<aws-java-sdk.version>1.11.750</aws-java-sdk.version>
+	</properties>
+	<dependencies>
+		<!-- Spring Boot Starters are a set of convenient dependency descriptorsthat 
+			you can include in your application. You get a one-stop-shop for allthe Spring 
+			and related technology that you need without having to hunt throughsample 
+			code and copy paste loads of dependency descriptors. For example,if you want 
+			to get started using Spring and JPA for database access justinclude the spring-boot-starter-data-jpa 
+			dependency in your project, andyou are good to go. -->
+
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Spring Boot includes an additional set of tools that can make theapplication 
+			development experience a little more pleasant. This dependencycan be included 
+			in any project to provide additional development-time features.Such as Automatic 
+			Restart, Live Reload, and more. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<!-- Implementing a data access layer of an application has been cumbersomefor 
+			quite a while. Too much boilerplate code has to be written to executesimple 
+			queries as well as perform pagination, and auditing. Spring Data JPAaims 
+			to significantly improve the implementation of data access layers byreducing 
+			the effort to the amount that's actually needed. As a developeryou write 
+			your repository interfaces, including custom finder methods, andSpring will 
+			provide the implementation automatically. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Extra Dependencies Anna needs -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!-- Isa adding AWS S3 dependency -->
+	  	<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk</artifactId>
+			<version>${aws-java-sdk.version}</version>
+		</dependency> 
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

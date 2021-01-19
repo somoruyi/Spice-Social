@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.c_like{
+    border:0;
+    outline:0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+.c_like:hover{
+    opacity: .8;
+    border:0;
+    outline:0;
+    
+}
+.c_for_developing{
+    margin: 10px;
+}
+img.c_chilli-icon{
+    height: 3%;
+    width: 3%;
+}
+

@@ -1,0 +1,16 @@
+
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:postgresql://spice.cagd9qgsp3uo.us-east-2.rds.amazonaws.com:5432/projectspice
+    username: spicegirls
+    password: revature
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:

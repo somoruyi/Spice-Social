@@ -1,0 +1,60 @@
+<!-- <div *ngIf="router.url != '/login'"> -->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" routerLink="/post">
+        <img src="assets/P2Icons/Cinnimon002.png" height="70px" style="width: 70px;" class="img-fluid" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/post">
+            <img src="assets/P2Icons/home1x.png" height="30px" style="width: 30px;" class="img-fluid" alt="">
+            <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list">
+          <img src="assets/P2Icons/friends1x.png" height="30px" style="width: 30px;" class="img-fluid" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add">
+          <img src="assets/P2Icons/addpost1x.png" height="30px" style="width: 30px;" class="img-fluid" alt="" >
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">
+          <img src="assets/P2Icons/bell1x.png" height="30px" style="width: 30px;" class="img-fluid" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/user-profile">
+          <img src="assets/P2Icons/user1x.png" height="30px" style="width: 30px;" class="img-fluid" alt="">
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" routerLink="update">
+            <img src="assets/P2Icons/settings.png" height="30px" style="width: 30px;" class="img-fluid" alt="">
+          </a>
+        </li>
+        
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0" routerLink="/list">
+        <button class="btn my-2 my-sm-0" type="submit" >Search</button>
+      </form>
+      <li>
+        <button class="btn my-2 my-sm-0" routerLink="/login">
+          Logout
+        </button>
+      </li>
+    </div>
+  </nav>
+<!-- 
+  
+ -->
+
+<router-outlet></router-outlet>

@@ -1,0 +1,100 @@
+<!-- <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Post List</h2>
+  </div>
+  <div class="panel-body">
+    <div class="container-fliud" *ngFor="let post of posts | async">
+      <div class="container-image">
+         <div *ngIf="post.image"> 
+          <img src="../assets/P2Icons/Cinnimon001.png" height="100px" style="width: 100px;" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div>
+        <h3>{{post.post}}</h3>
+        <h4>{{post.likeCount}}</h4>
+      </div>
+      <div class="actions">
+        <button (click)="deletePost(post.pid)" class="btn btn-danger">Delete</button>
+        <button (click)="postDetails(post.pid)" class="btn btn-info" style="margin-left: 10px">Details</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<h2>Spice Up Your Life</h2>
+
+                                                                <!--custom pipe -->
+<div class="card gedf-card" *ngFor="let post of posts | async | reversepipe" track-by="userId">
+
+  <div class="card-header">
+      <div class="d-flex justify-content-between align-items-center" >
+          <div class="d-flex justify-content-between align-items-center" >
+              <div class="mr-2">
+
+                <div *ngIf="post.user.profilePicture;else other_content"><img class="profile-icon" [src]="post.user.profilePicture"></div>
+                <ng-template #other_content><img class="rounded-circle" width="45" src="../assets/P2Icons/Cinnimon001.png" alt=""></ng-template>
+
+              </div>
+              <div class="ml-2">
+                <div>
+                  <label><b>{{post.user.username}} </b></label>
+                </div>
+                <div>
+                  <label><b>{{post.user.firstName}} {{post.user.lastName}} </b></label>
+                </div>
+              </div>
+          </div>
+          <div>
+          </div>
+      </div>
+
+  </div>
+  <div class="card-body">
+      
+      <a class="card-link" href="#">
+        <div class="viewer">
+
+
+        <img style="width: 300px; height: 300px;" [src]="post.image" class="">
+
+
+        <!-- {{post.image}} -->
+      </div>
+        <!-- <img class="rounded-sqaure" width="200" style="justify-self: center; " src="../assets/P2Icons/Cinnimon001.png" alt=""> -->
+      </a>
+
+      <p class="card-text">
+          {{post.post}}
+      </p>
+  </div>
+  <div class="card-footer">
+
+    <img (click)="createLike(post.postId)" src="../assets/P2Icons/chilli001.png" width="20" alt=""> {{post.likeCount}}
+
+    <!--  <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+      <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Share</a>
+    -->
+  </div>
+</div>
+
+<!-- <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Post</th>
+            <th>Image</th>
+            <th>likeCount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let post of posts | async">
+            <td>{{post.post}}</td>
+            <td>{{post.image}}</td>
+            <td>{{post.likeCount}}</td>
+            <td><button (click)="deletePost(post.pid)" class="btn btn-danger">Delete</button>
+                <button (click)="postDetails(post.pid)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table> -->
+<!-- </div>
+  </div> -->
