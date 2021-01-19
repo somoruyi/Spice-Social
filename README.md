@@ -1,5 +1,5 @@
 # Spice Social Media Network
-
+#### (Creators: Sandra, Hannah, Dez, Isa, & Anna)
 The purpose of the Spice Social Media Network is to provide a system that encourages users to share food and fun on their feeds as a way to interact with their friends.
 
 The new Spice design will incorporate:
