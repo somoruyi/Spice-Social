@@ -5,8 +5,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://spice.cagd9qgsp3uo.us-east-2.rds.amazonaws.com:5432/projectspice
-    username: spicegirls
-    password: revature
+    username: 
+    password: 
     driver-class-name: org.postgresql.Driver
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
